@@ -1,7 +1,11 @@
-import './App.css';
+import { Logon } from "./pages/Logon";
+import { GlobalStyle } from "./styles/global";
 
-export default function App() {
+export function App() {
   return (
-    <h1>Be The Hero - Home Page</h1>
+    <>
+      <Logon />
+      <GlobalStyle />
+    </>
   );
 }
