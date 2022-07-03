@@ -27,4 +27,25 @@ export const GlobalStyle = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    .react-modal-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .react-modal-content {
+        width: 100%;
+        max-width: 1120px;
+        background: var(--background);
+        height: 580px;
+        padding: 96px;
+        position: relative;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    }
 `

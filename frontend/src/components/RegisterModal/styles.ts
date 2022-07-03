@@ -1,43 +1,48 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-    max-width: 1120px;
-    height: 100vh;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 `
 
-export const SectionForm = styled.section`
-    width: 100%;
-    max-width: 350px;
-    margin-right: 30px;
+export const Info = styled.div`
+    svg {
+        margin-right: 20px;
+    }
+
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
-
-    svg {
-        margin-right: 18px;
-    }
-
-    div {
-        cursor: pointer;
-    }
 `
 
-export const Form = styled.form`
-    margin-top: 100px;
+export const InfoSection = styled.section`
+    width: 390px;
+    font-size: 18px;
+    margin-top: 64px;
+    margin-bottom: 84px;
 
     h1 {
-        color: var(--principal-title);
+        font-size: 36px;
+        margin-bottom: 32px;
         font-style: normal;
         font-weight: 500;
         font-size: 36px;
         line-height: 36px;
-        margin-bottom: 32px;
     }
+
+    p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--text);
+    }
+    
+`
+
+export const Form = styled.form`
+    width: 450px;
+    margin-left: 96px;
 
     input {
         width: 100%;
@@ -46,11 +51,20 @@ export const Form = styled.form`
         border-radius: 8px;
         font-size: 18px;
         padding-left: 24px;
-        color: var(--text);        
-        
+        color: var(--text);
+        margin-bottom: 8px;
+
         &::placeholder {
             color: var(--second-text);
         }
+    }
+`
+
+export const InputGroup = styled.div`
+    display: flex;
+    
+    input + input {
+        margin-left: 8px;
     }
 `
 
