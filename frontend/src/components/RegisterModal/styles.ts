@@ -90,3 +90,11 @@ export const Button = styled.button`
         filter: brightness(0.9);
     }
 `
+
+export const Link = styled.a`
+    cursor: pointer;
+    
+    &:hover {
+        color: var(--red-hero);
+    }
+`
